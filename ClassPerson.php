@@ -11,13 +11,14 @@
             
         }
 
-        public function getDatosPersonales(){
+        public function getPersonalInformation(){
             $data = "
                 <h2>PERSONAL INFORMATION</h2>
-                DPI: { $this->intDpi}<br>
-                Name: { $this->strName}<br>
-                AGE: { $this->intAge}<br>
+                DPI: {$this->intDpi}<br>
+                Name: {$this->strName}<br>
+                Age: {$this->intAge}<br>
             ";
+            return $data;
         }
 
     } //End class Person
